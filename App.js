@@ -40,6 +40,11 @@ export default function App() {
     setCountables(newState);
   };
 
+  const removeCountable = (index) => {
+    const newState = countables.filter((_, i) => i !== index);
+    setCountables(newState);
+  };
+
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
@@ -53,6 +58,7 @@ export default function App() {
                 countable={countable}
                 key={countable.name}
                 changeCount={changeCount}
+                removeCountable={removeCountable}
                 index={index}
               />
             ))}
