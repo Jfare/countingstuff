@@ -1,6 +1,9 @@
 import { StyleSheet } from "react-native";
 
 export const CommonStyles = StyleSheet.create({
+  input: {
+    flex: 1,
+  },
   textItem: {
     fontSize: 40,
   },
@@ -13,5 +16,15 @@ export const CommonStyles = StyleSheet.create({
     margin: 5,
     paddingEnd: 20,
     paddingStart: 20,
+  },
+  buttonContainer: {
+    marginLeft: "auto",
+  },
+  errorText: {
+    color: "red",
+    marginTop: 5,
+    position: "absolute",
+    bottom: -20,
+    left: 10,
   },
 });
